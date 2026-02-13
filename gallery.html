@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Story ❤️</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+
+    background: linear-gradient(
+        135deg,
+        #D52D00,
+        #FF9A56,
+        #FFFFFF,
+        #D362A4,
+        #A30262
+    );
+}
+
+/* TITLE */
+.header{
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+    font-size:46px;
+    font-weight:900;
+}
+
+/* GALLERY LAYOUT */
+.gallery{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap:35px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+/* LOVE NOTE */
+.note{
+    padding:20px;
+    font-size:18px;
+    text-align:center;
+    font-weight:600;
+
+    background: linear-gradient(
+        90deg,
+        #D52D00,
+        #FF9A56,
+        #D362A4,
+        #A30262
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* BACK BUTTON */
+.back{
+    display:block;
+    margin:60px auto;
+    padding:18px 44px;
+    font-size:22px;
+    border:none;
+    border-radius:16px;
+    background:#A30262;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.back:hover{
+    transform:scale(1.1);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+.header{
+    font-size:32px;
+}
+
+.card img{
+    height:260px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Our Story 🌈❤️
+</div>
+
+<div class="gallery">
+
+<!-- PHOTO 1 -->
+<div class="card">
+<img src="photo1.jpg">
+<div class="note">
+I love being with you all the time, even our little lunch breaks. I appreciate every meal you have gotten me, I am one happy and full girl ever since I met you. You have ym whole heart forever, I promise. Anyways I know this may be silly but I wanted to try show my appreciation for you in a fun way that you would know of well!!  I hope you liked my little website because now I know how hard what you do is hahah I have a whole new appreciation for you my smart smart computer nerd. Cute hehe.
+</div>
+</div>
+
+<!-- PHOTO 2 -->
+<div class="card">
+<img src="photo2.jpg">
+<div class="note">
+You are the sweetest valentine and I cant wait to spend all my Valentine’s Days with you.  I promise to make every valentiens day amazing and have tricks up my sleeve 
+</div>
+
+<!-- PHOTO 3 -->
+<div class="card">
+<img src="photo3.jpg">
+<div class="note">
+You make even boring stinky trains amazing and fun. Every unfun thing is somehow 1000000000x better with you my baba.
+</div>
+</div>
+
+<!-- PHOTO 4 -->
+<div class="card">
+<img src="photo4.jpg">
+<div class="note">
+I will love you forever, my baby.
+</div>
+</div>
+
+</div>
+
+<button class="back" onclick="location.href='index.html'">
+Back to the important question 💌
+</button>
+
+</body>
+</html>
